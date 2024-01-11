@@ -1,10 +1,10 @@
 import {render} from "react-dom";
-import Test from "./components/Test";
+import {BrowserRouter} from "react-router-dom";
+
 
 render(
-	<div className="container">
-		<Test/>
-	</div>,
+	<BrowserRouter>
 	
+	</BrowserRouter>,
 	document.getElementById('root'),
 )
