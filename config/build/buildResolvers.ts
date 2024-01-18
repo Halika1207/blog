@@ -8,12 +8,14 @@ export function buildResolvers(options: BuildOptions): ResolveOptions {
         preferAbsolute: true,
         modules: [path.resolve(__dirname, options.paths.src), 'node_modules'],
         alias: {
-            "@widgets": path.resolve(__dirname, options.paths.src + "/widgets"),
-            "@entities": path.resolve(__dirname, options.paths.src + "/entities"),
-            "@shared": path.resolve(__dirname, options.paths.src + "/shared"),
-            "@features": path.resolve(__dirname, options.paths.src + "/features"),
-            "@pages": path.resolve(__dirname, options.paths.src + "/pages"),
-        },
+					"@widgets": path.resolve(__dirname, options.paths.src + "/widgets"),
+					"@entities": path.resolve(__dirname, options.paths.src + "/entities"),
+					"@shared": path.resolve(__dirname, options.paths.src + "/shared"),
+					"@features": path.resolve(__dirname, options.paths.src + "/features"),
+					"@pages": path.resolve(__dirname, options.paths.src + "/pages"),
+					"@app": path.resolve(__dirname, options.paths.src + "/app"),
+	
+				},
         mainFiles: ["index"],
     }
 }
