@@ -1,5 +1,4 @@
 .button {
-  width: 100%;
   padding: 4px 2px;
   font-size: 16px;
   color: black;
@@ -20,17 +19,15 @@
   padding: 0;
   border: 0;
   outline: 0;
-  width: inherit;
   background-color: inherit;
   color: var(--bg-color);
 }
 
 .tertiary {
-  padding: 2px 4px;
-  max-width: 75px;
+  padding: 2px 10px;
+  width: fit-content;
   border: 1px solid var(--bg-color);
   outline: 0;
-  width: inherit;
   background-color: inherit;
   color: var(--bg-color);
 }
